@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>الطيور | عالم الكائنات</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .bird-card { border-top: 5px solid #03a9f4; padding: 20px; background: var(--card); border-radius: 0 0 20px 20px; }
+    </style>
+</head>
+<body class="light-theme">
+    <header>
+        <nav class="navbar">
+            <div class="logo">🐾 عالم الكائنات</div>
+            <ul class="nav-links">
+                <li><a href="index.html">🏠 الرئيسية</a></li>
+                <li><a href="mammals.html">🐘 الثدييات</a></li>
+                <li><a href="birds.html">🦅 الطيور</a></li>
+                <li><a href="reptiles.html">🦎 الزواحف</a></li>
+                <li><a href="amphibians.html">🐸 البرمائيات</a></li>
+                <li><a href="fish.html">🐠 الأسماك</a></li>
+                <li><a href="insects.html">🐝 الحشرات</a></li>
+                <li><a href="mollusks.html">🐚 الرخويات</a></li>
+                <li><a href="contact.html">📞 اتصل بنا</a></li>
+            </ul>
+            <button id="theme-toggle">🌓</button>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="bird-card">
+            <h1>عالم الطيور 🦅</h1>
+            <img src="/EX/birds.jpeg" class="main-img" alt="طيور">
+            <p>الطيور هي حيوانات فقارية بدم حار، يغطي الريش أجسامها وتمتلك مناقير خالية من الأسنان. تتميز بوضع البيض ذو القشرة الصلبة، ومعظم أنواعها تمتلك عظاماً مجوفة تساعدها على الطيران.</p>
+        </div>
+        <h2>أنواع الببغاوات المتوفرة 🦜</h2>
+        <table class="data-table">
+            <thead>
+                <tr><th>النوع</th><th>متوسط العمر</th><th>القدرة على الكلام</th><th>السعر</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>ببغاء الكوكاتيل</td><td>15 سنة</td><td>محدودة</td><td>$100</td></tr>
+                <tr><td>الببغاء الأفريقي الرمادي</td><td>50 سنة</td><td>عالية جداً</td><td>$1200</td></tr>
+            </tbody>
+        </table>
+         <section class="card">
+            <h3>آراء الزوار (LocalStorage) 💬</h3>
+            <div id="comments-display"></div>
+            <form id="comment-form">
+                <input type="text" id="rev-name" placeholder="اسمك" required>
+                <textarea id="rev-text" placeholder="اكتب رأيك هنا..."></textarea>
+                <button type="submit" style="background:var(--primary); color:white; border:none; padding:10px 20px; cursor:pointer;">نشر التعليق</button>
+            </form>
+        </section>
+    </main>
+    <footer><p>حقوق النشر © 2024 - عالم الكائنات</p></footer>
+    <script src="main.js"></script>
+</body>
+</html>
