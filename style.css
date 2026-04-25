@@ -35,6 +35,22 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
+@media (max-width: 768px) {
+  /* استهدف أي عنصر يستخدم flex ليصبح عمودياً */
+  div, section, header, nav {
+    display: flex;
+    flex-direction: column !important;
+    width: 100% !important;
+    box-sizing: border-box; /* لضمان عدم خروج العناصر عن الحواف */
+  }
+
+  /* تأكد أن الفيديوهات (مثل الذي في صورتك) تأخذ العرض الكامل */
+  video, iframe, img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
 .nav-links {
     list-style: none;
     display: flex;
