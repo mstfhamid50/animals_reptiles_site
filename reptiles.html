@@ -1,64 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>الزواحف | عالم الكائنات</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">🐾 عالم الكائنات</div>
-            <ul class="nav-links">
-                <li><a href="index.html">🏠 الرئيسية</a></li>
-                <li><a href="mammals.html">🐘 الثدييات</a></li>
-                <li><a href="birds.html">🦅 الطيور</a></li>
-                <li><a href="reptiles.html">🦎 الزواحف</a></li>
-                <li><a href="amphibians.html">🐸 البرمائيات</a></li>
-                <li><a href="fish.html">🐠 الأسماك</a></li>
-                <li><a href="insects.html">🐝 الحشرات</a></li>
-                <li><a href="mollusks.html">🐚 الرخويات</a></li>
-                <li><a href="contact.html">📞 اتصل بنا</a></li>
-            </ul>
-            <button id="theme-toggle">🌓</button>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">🐾 عالم الكائنات</div>
+        <ul class="nav-links">
+          <li><a href="index.html">🏠 الرئيسية</a></li>
+          <li><a href="mammals.html">🐘 الثدييات</a></li>
+          <li><a href="birds.html">🦅 الطيور</a></li>
+          <li><a href="reptiles.html">🦎 الزواحف</a></li>
+          <li><a href="amphibians.html">🐸 البرمائيات</a></li>
+          <li><a href="fish.html">🐠 الأسماك</a></li>
+          <li><a href="insects.html">🐝 الحشرات</a></li>
+          <li><a href="mollusks.html">🐚 الرخويات</a></li>
+          <li><a href="contact.html">📞 اتصل بنا</a></li>
+        </ul>
+        <button id="theme-toggle">🌓</button>
+      </nav>
     </header>
 
     <main class="container">
-        <article>
-            <h1>عالم الزواحف 🦎</h1>
-            <img src="/EX/reptiles.jpeg" style="width:100%; border-radius:10px;">
-            <p>الزواحف هي حيوانات فقارية بدم بارد، يغطي جلدها حراشف تحميها من الجفاف. تعيش في مختلف البيئات من الصحاري إلى الغابات الاستوائية.</p>
+      <article>
+        <h1>عالم الزواحف 🦎</h1>
+        <img src="/EX/reptiles.jpeg" style="width: 100%; border-radius: 10px" />
+        <p>
+          الزواحف هي حيوانات فقارية بدم بارد، يغطي جلدها حراشف تحميها من الجفاف.
+          تعيش في مختلف البيئات من الصحاري إلى الغابات الاستوائية.
+        </p>
 
-            <!-- Layout 8: Advanced Table -->
-            <h2>أسعار الأنواع المتاحة 💰</h2>
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>النوع</th>
-                        <th>الموطن</th>
-                        <th>السعر</th>
-                        <th>التقييم</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>إيغوانا خضراء</td><td>أمريكا الجنوبية</td><td>$150</td><td>⭐⭐⭐⭐</td></tr>
-                    <tr><td>سحلية التنين</td><td>أستراليا</td><td>$300</td><td>⭐⭐⭐⭐⭐</td></tr>
-                </tbody>
-            </table>
-        </article>
+        <!-- Layout 8: Advanced Table -->
+        <h2>أسعار الأنواع المتاحة 💰</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>النوع</th>
+              <th>الموطن</th>
+              <th>السعر</th>
+              <th>التقييم</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>إيغوانا خضراء</td>
+              <td>أمريكا الجنوبية</td>
+              <td>$150</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>سحلية التنين</td>
+              <td>أستراليا</td>
+              <td>$300</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
 
-        <section class="card">
-            <h3>آراء الزوار (LocalStorage) 💬</h3>
-            <div id="comments-display"></div>
-            <form id="comment-form">
-                <input type="text" id="rev-name" placeholder="اسمك" required>
-                <textarea id="rev-text" placeholder="اكتب رأيك هنا..."></textarea>
-                <button type="submit" style="background:var(--primary); color:white; border:none; padding:10px 20px; cursor:pointer;">نشر التعليق</button>
-            </form>
-        </section>
+      <section class="card">
+        <h3>آراء الزوار (LocalStorage) 💬</h3>
+        <div id="comments-display"></div>
+        <form id="comment-form">
+          <input type="text" id="rev-name" placeholder="اسمك" required />
+          <textarea id="rev-text" placeholder="اكتب رأيك هنا..."></textarea>
+          <button
+            type="submit"
+            style="
+              background: var(--primary);
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              cursor: pointer;
+            "
+          >
+            نشر التعليق
+          </button>
+        </form>
+      </section>
     </main>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
