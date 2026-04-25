@@ -1,108 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>اتصل بنا | عالم الكائنات</title>
     <!-- ربط ملف التنسيق الخارجي -->
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css" />
+
     <!-- CSS داخلي لتحقيق الشرط رقم 4 -->
     <style>
-        .contact-page-header {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: var(--card);
-            border-radius: 15px;
-            margin-bottom: 30px;
-            border-bottom: 5px solid var(--primary);
-        }
-        .form-box h1 {
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-        .audio-section {
-            margin-top: 30px;
-            padding: 20px;
-            background: #e8f5e9;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .dark-theme .audio-section {
-            background: #2e7d32;
-            color: white;
-        }
+      .contact-page-header {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: var(--card);
+        border-radius: 15px;
+        margin-bottom: 30px;
+        border-bottom: 5px solid var(--primary);
+      }
+      .form-box h1 {
+        color: var(--primary);
+        margin-bottom: 10px;
+      }
+      .audio-section {
+        margin-top: 30px;
+        padding: 20px;
+        background: #e8f5e9;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .dark-theme .audio-section {
+        background: #2e7d32;
+        color: white;
+      }
     </style>
-</head>
-<body class="light-theme">
-
+  </head>
+  <body class="light-theme">
     <header>
-        <nav class="navbar">
-            <div class="logo">🐾 عالم الكائنات</div>
-            <ul class="nav-links">
-                <li><a href="index.html">🏠 الرئيسية</a></li>
-                <li><a href="mammals.html">🐘 الثدييات</a></li>
-                <li><a href="birds.html">🦅 الطيور</a></li>
-                <li><a href="reptiles.html">🦎 الزواحف</a></li>
-                <li><a href="amphibians.html">🐸 البرمائيات</a></li>
-                <li><a href="fish.html">🐠 الأسماك</a></li>
-                <li><a href="insects.html">🐝 الحشرات</a></li>
-                <li><a href="mollusks.html">🐚 الرخويات</a></li>
-                <li><a href="contact.html">📞 اتصل بنا</a></li>
-            </ul>
-            <button id="theme-toggle">تبديل الثيم 🌓</button>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">🐾 عالم الكائنات</div>
+        <ul class="nav-links">
+          <li><a href="index.html">🏠 الرئيسية</a></li>
+          <li><a href="mammals.html">🐘 الثدييات</a></li>
+          <li><a href="birds.html">🦅 الطيور</a></li>
+          <li><a href="reptiles.html">🦎 الزواحف</a></li>
+          <li><a href="amphibians.html">🐸 البرمائيات</a></li>
+          <li><a href="fish.html">🐠 الأسماك</a></li>
+          <li><a href="insects.html">🐝 الحشرات</a></li>
+          <li><a href="mollusks.html">🐚 الرخويات</a></li>
+          <li><a href="contact.html">📞 اتصل بنا</a></li>
+        </ul>
+        <button id="theme-toggle">تبديل الثيم 🌓</button>
+      </nav>
     </header>
 
     <main class="container">
-        <div class="contact-page-header">
-            <h1>تواصل معنا 📞</h1>
-            <p>نحن هنا للإجابة على استفساراتكم حول تربية الحيوانات وأماكن البيع المعتمدة.</p>
+      <div class="contact-page-header">
+        <h1>تواصل معنا 📞</h1>
+        <p>
+          نحن هنا للإجابة على استفساراتكم حول تربية الحيوانات وأماكن البيع
+          المعتمدة.
+        </p>
+      </div>
+
+      <div class="form-box">
+        <!-- نموذج عمل حقيقي (Working Form) - الشرط رقم 6 -->
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="u-name">الاسم الكامل:</label>
+            <input type="text" id="u-name" placeholder="ادخل اسمك الثلاثي" />
+          </div>
+
+          <div class="field">
+            <label for="u-email">البريد الإلكتروني:</label>
+            <input type="email" id="u-email" placeholder="example@mail.com" />
+          </div>
+
+          <div class="field">
+            <label for="u-phone">رقم الهاتف:</label>
+            <input type="text" id="u-phone" placeholder="01xxxxxxxxx" />
+          </div>
+
+          <div class="field">
+            <label for="u-msg">رسالتك:</label>
+            <textarea
+              id="u-msg"
+              placeholder="كيف يمكننا مساعدتك؟"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            id="submit-btn"
+            style="
+              width: 100%;
+              background: var(--primary);
+              color: white;
+              padding: 15px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              font-size: 1.1rem;
+              font-weight: bold;
+            "
+          >
+            إرسال الطلب الآن 🚀
+          </button>
+        </form>
+
+        <!-- عنصر الوسائط (Audio) - الشرط رقم 5 -->
+        <div class="audio-section">
+          <p>🎶 استمتع بأصوات الطبيعة الهادئة أثناء مراسلتنا:</p>
+          <audio controls>
+            <source src="/EX/birds_singing.mp3" type="audio/mp3" />
+            متصفحك لا يدعم مشغل الصوت.
+          </audio>
         </div>
-
-        <div class="form-box">
-            <!-- نموذج عمل حقيقي (Working Form) - الشرط رقم 6 -->
-            <form id="contact-form" novalidate>
-                <div class="field">
-                    <label for="u-name">الاسم الكامل:</label>
-                    <input type="text" id="u-name" placeholder="ادخل اسمك الثلاثي">
-                </div>
-                
-                <div class="field">
-                    <label for="u-email">البريد الإلكتروني:</label>
-                    <input type="email" id="u-email" placeholder="example@mail.com">
-                </div>
-
-                <div class="field">
-                    <label for="u-phone">رقم الهاتف:</label>
-                    <input type="text" id="u-phone" placeholder="01xxxxxxxxx">
-                </div>
-
-                <div class="field">
-                    <label for="u-msg">رسالتك:</label>
-                    <textarea id="u-msg" placeholder="كيف يمكننا مساعدتك؟" rows="5"></textarea>
-                </div>
-
-                <button type="submit" id="submit-btn" style="width:100%; background:var(--primary); color:white; padding:15px; border:none; border-radius:5px; cursor:pointer; font-size:1.1rem; font-weight:bold;">
-                    إرسال الطلب الآن 🚀
-                </button>
-            </form>
-
-            <!-- عنصر الوسائط (Audio) - الشرط رقم 5 -->
-            <div class="audio-section">
-                <p>🎶 استمتع بأصوات الطبيعة الهادئة أثناء مراسلتنا:</p>
-                <audio controls>
-                    <source src="/EX/birds_singing.mp3" type="audio/mp3">
-                    متصفحك لا يدعم مشغل الصوت.
-                </audio>
-            </div>
-        </div>
+      </div>
     </main>
 
     <footer>
-        <p>جميع الحقوق محفوظة &copy; 2024 | مشروع عالم الكائنات 🐾</p>
+      <p>جميع الحقوق محفوظة &copy; 2024 | مشروع عالم الكائنات 🐾</p>
     </footer>
 
     <!-- ربط ملف البرمجة الخارجي الذي يحتوي على الـ Validation والـ Storage -->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

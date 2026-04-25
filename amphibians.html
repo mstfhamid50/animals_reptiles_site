@@ -1,58 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>البرمائيات | عالم الكائنات</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        .amphi-box { background: #f1f8e9; border: 2px solid #8bc34a; padding: 20px; border-radius: 50px 5px; }
+      .amphi-box {
+        background: hsl(88, 52%, 94%);
+        border: 2px solid #8bc34a;
+        padding: 20px;
+        border-radius: 50px 5px;
+      }
     </style>
-</head>
-<body class="light-theme">
+  </head>
+  <body class="light-theme">
     <header>
-        <nav class="navbar">
-            <div class="logo">🐾 عالم الكائنات</div>
-            <ul class="nav-links">
-                <!-- نفس القائمة الموحدة -->
-                <li><a href="index.html">🏠 الرئيسية</a></li>
-                <li><a href="mammals.html">🐘 الثدييات</a></li>
-                <li><a href="birds.html">🦅 الطيور</a></li>
-                <li><a href="reptiles.html">🦎 الزواحف</a></li>
-                <li><a href="amphibians.html">🐸 البرمائيات</a></li>
-                <li><a href="fish.html">🐠 الأسماك</a></li>
-                <li><a href="insects.html">🐝 الحشرات</a></li>
-                <li><a href="mollusks.html">🐚 الرخويات</a></li>
-                <li><a href="contact.html">📞 اتصل بنا</a></li>
-            </ul>
-            <button id="theme-toggle">🌓</button>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">🐾 عالم الكائنات</div>
+        <ul class="nav-links">
+          <!-- نفس القائمة الموحدة -->
+          <li><a href="index.html">🏠 الرئيسية</a></li>
+          <li><a href="mammals.html">🐘 الثدييات</a></li>
+          <li><a href="birds.html">🦅 الطيور</a></li>
+          <li><a href="reptiles.html">🦎 الزواحف</a></li>
+          <li><a href="amphibians.html">🐸 البرمائيات</a></li>
+          <li><a href="fish.html">🐠 الأسماك</a></li>
+          <li><a href="insects.html">🐝 الحشرات</a></li>
+          <li><a href="mollusks.html">🐚 الرخويات</a></li>
+          <li><a href="contact.html">📞 اتصل بنا</a></li>
+        </ul>
+        <button id="theme-toggle">🌓</button>
+      </nav>
     </header>
     <main class="container">
-        <h1>عالم البرمائيات 🐸</h1>
-        <img src="/EX/amphibians.jpeg" class="main-img" alt="برمائيات">
-        <div class="amphi-box">
-            <p>البرمائيات كائنات فريدة تبدأ حياتها في الماء وتتنفس بالخياشيم، ثم تتحول لتعيش على اليابسة وتتنفس بالرئتين والجلد. جلدها دائماً رطب ونفاذ للماء.</p>
-        </div>
-        <h2>برمائيات للتربية 🔬</h2>
-        <table class="data-table">
-            <thead>
-                <tr><th>الاسم</th><th>درجة الرطوبة</th><th>الغذاء الأساسي</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>ضفدع الأشجار</td><td>عالية جداً</td><td>ديدان صغيرة</td></tr>
-                <tr><td>السلمندر المرقط</td><td>متوسطة</td><td>يرقات مائية</td></tr>
-            </tbody>
-        </table>
-         <section class="card">
-            <h3>آراء الزوار (LocalStorage) 💬</h3>
-            <div id="comments-display"></div>
-            <form id="comment-form">
-                <input type="text" id="rev-name" placeholder="اسمك" required>
-                <textarea id="rev-text" placeholder="اكتب رأيك هنا..."></textarea>
-                <button type="submit" style="background:var(--primary); color:white; border:none; padding:10px 20px; cursor:pointer;">نشر التعليق</button>
-            </form>
-        </section>
+      <h1>عالم البرمائيات 🐸</h1>
+      <img
+        src="./EX/amphibians.jpeg"
+        width="75px"
+        height="100px"
+        class="main-img"
+        alt="برمائيات"
+      />
+      <div class="amphi-box">
+        <p>
+          البرمائيات كائنات فريدة تبدأ حياتها في الماء وتتنفس بالخياشيم، ثم
+          تتحول لتعيش على اليابسة وتتنفس بالرئتين والجلد. جلدها دائماً رطب ونفاذ
+          للماء.
+        </p>
+      </div>
+      <h2>برمائيات للتربية 🔬</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>الاسم</th>
+            <th>درجة الرطوبة</th>
+            <th>الغذاء الأساسي</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ضفدع الأشجار</td>
+            <td>عالية جداً</td>
+            <td>ديدان صغيرة</td>
+          </tr>
+          <tr>
+            <td>السلمندر المرقط</td>
+            <td>متوسطة</td>
+            <td>يرقات مائية</td>
+          </tr>
+        </tbody>
+      </table>
+      <section class="card">
+        <h3>آراء الزوار (LocalStorage) 💬</h3>
+        <div id="comments-display"></div>
+        <form id="comment-form">
+          <input type="text" id="rev-name" placeholder="اسمك" required />
+          <textarea id="rev-text" placeholder="اكتب رأيك هنا..."></textarea>
+          <button
+            type="submit"
+            style="
+              background: var(--primary);
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              cursor: pointer;
+            "
+          >
+            نشر التعليق
+          </button>
+        </form>
+      </section>
     </main>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
