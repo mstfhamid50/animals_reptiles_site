@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>عالم الكائنات | الرئيسية</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Layout 6: Internal CSS -->
+    <style>
+      .hero {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://unsplash.com");
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">🐾 عالم الكائنات</div>
+        <ul class="nav-links">
+          <li><a href="index.html">🏠 الرئيسية</a></li>
+          <li><a href="mammals.html">🐘 الثدييات</a></li>
+          <li><a href="birds.html">🦅 الطيور</a></li>
+          <li><a href="reptiles.html">🦎 الزواحف</a></li>
+          <li><a href="amphibians.html">🐸 البرمائيات</a></li>
+          <li><a href="fish.html">🐠 الأسماك</a></li>
+          <li><a href="insects.html">🐝 الحشرات</a></li>
+          <li><a href="mollusks.html">🐚 الرخويات</a></li>
+          <li><a href="contact.html">📞 اتصل بنا</a></li>
+        </ul>
+        <button id="theme-toggle">تبديل الثيم 🌓</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>مرحباً بكم في عالم الحيوانات والزواحف</h1>
+        <p>اكتشف الطبيعة من حولك بكل تفاصيلها</p>
+      </section>
+
+      <section class="grid-layout">
+        <div class="card">
+          <h2>وثائقي قصير 📺</h2>
+          <video controls autoplay muted loop width="100%">
+            <source src="/Ex/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="card">
+          <h2>🗺️</h2>
+          <iframe
+            src="birds.html"
+            title="birds"
+            width="100%"
+            height="200"
+            style="border: 0"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Layout 7: Image Map -->
+      <section style="text-align: center; margin-top: 40px">
+        <h2>استكشف الأقسام بالضغط 🔎</h2>
+        <img
+          src="/Ex/hhhh.jpeg"
+          usemap="#mainmap"
+          style="max-width: 100%; border-radius: 15px"
+        />
+        <map name="mainmap">
+          <area
+            shape="rect"
+            coords="0,0,400,400"
+            alt="ثدييات"
+            href="mammals.html"
+          />
+        </map>
+      </section>
+    </main>
+
+    <footer><p>حقوق النشر © 2024 - عالم الكائنات</p></footer>
+    <script src="main.js"></script>
+  </body>
+</html>

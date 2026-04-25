@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>الحشرات | عالم الكائنات</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .insect-info {
+        background: #fffde7;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px dashed #fbc02d;
+      }
+      .dark-theme .insect-info {
+        background: #333;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="light-theme">
+    <header>
+      <nav class="navbar">
+        <div class="logo">🐾 عالم الكائنات</div>
+        <ul class="nav-links">
+          <!-- نفس القائمة -->
+          <li><a href="index.html">🏠 الرئيسية</a></li>
+          <li><a href="mammals.html">🐘 الثدييات</a></li>
+          <li><a href="birds.html">🦅 الطيور</a></li>
+          <li><a href="reptiles.html">🦎 الزواحف</a></li>
+          <li><a href="amphibians.html">🐸 البرمائيات</a></li>
+          <li><a href="fish.html">🐠 الأسماك</a></li>
+          <li><a href="insects.html">🐝 الحشرات</a></li>
+          <li><a href="mollusks.html">🐚 الرخويات</a></li>
+          <li><a href="contact.html">📞 اتصل بنا</a></li>
+        </ul>
+        <button id="theme-toggle">🌓</button>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>عالم الحشرات 🐝</h1>
+      <img
+        src="/EX/insects_.jpeg"
+        width="75px"
+        height="100px"
+        class="main-img"
+        alt="حشرات"
+      />
+      <div class="insect-info">
+        <p>
+          الحشرات هي المجموعة الأكثر تنوعاً على كوكب الأرض، حيث تمتلك ستة أرجل
+          وجسماً مقسماً إلى ثلاثة أجزاء. تلعب دوراً حيوياً في تلقيح النباتات
+          وتوازن البيئة.
+        </p>
+      </div>
+      <h2>حشرات مفيدة للحدائق 🐞</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>الحشرة</th>
+            <th>الفائدة</th>
+            <th>التوفر</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>نحل العسل</td>
+            <td>إنتاج العسل والتلقيح</td>
+            <td>متوفر بمناحلنا</td>
+          </tr>
+          <tr>
+            <td>الدعسوقة</td>
+            <td>مكافحة الآفات الزراعية</td>
+            <td>موسمي</td>
+          </tr>
+        </tbody>
+      </table>
+      <section class="card">
+        <h3>آراء الزوار (LocalStorage) 💬</h3>
+        <div id="comments-display"></div>
+        <form id="comment-form">
+          <input type="text" id="rev-name" placeholder="اسمك" required />
+          <textarea id="rev-text" placeholder="اكتب رأيك هنا..."></textarea>
+          <button
+            type="submit"
+            style="
+              background: var(--primary);
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              cursor: pointer;
+            "
+          >
+            نشر التعليق
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
